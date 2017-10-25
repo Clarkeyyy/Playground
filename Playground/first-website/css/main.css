@@ -1,0 +1,218 @@
+/***********************************
+GENERAL
+***********************************/
+body{
+  font-family: 'Trocchi', serif;
+}
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+text-decoration: none;
+}
+
+img{
+ max-width: 100%; /*tells the image to match 100% of the screen*/ 
+}
+
+h3{
+  margin: 0 0 1em 0;
+}
+
+
+
+
+
+
+/***********************************
+HEADING
+***********************************/
+header {
+ float: left;
+ margin: 0 0 30px 0; /* keeps margins seperate from others*/
+ padding: 5px 0 0 0; /*seperates text without actually moving the margin*/
+ width: 100%;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+/*If google font is not available, the font will fall back to this*/
+h1{
+  font-family: 'Lora', serif;
+  margin: 15px 0;
+  font-size: 2.00em;
+  font-weight: normal;
+  line-height: 0.8m;
+}
+
+h2{
+  font-size:0.95em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+
+/***********************************
+Navigation
+***********************************/
+nav{
+ text-align: center;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+nav ul{
+ list-style: none;
+ margin: 0 10px;
+ padding: 10px 0; 
+}
+nav li{
+  display:inline-block;
+}
+
+nav a{
+ font-weight: 800;
+ padding: 15px 10px;
+ 
+}
+
+
+
+/***********************************
+Footer
+***********************************/
+footer{
+  font-size: 0.75em;
+  text-align: center;
+  clear:both; /*makes the bottom fotter its own section rather than wrapped*/
+  padding-top: 50px;
+  color: #eee;
+}
+.social-icon{
+ width: 30px;
+ height: 30px;
+ margin: 0 5px;
+}
+
+
+
+/***********************************
+Page portfolio
+***********************************/
+#gallery{
+  margin: 0;
+  padding: 0;
+  list-style: none; /*will remove any bullet points to none, don't want them*/
+}
+
+#gallery li{
+  float: left; /*image is floating them side by side*/
+  width: 45%; /*regardless size of browser window, they will only ever take up 45% of parent element*/
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+}
+#gallery li a p{
+ margin: 0; /* p have some margin by default, tends to push elements in parent container, where they shouldn't*/
+ padding: 5%;
+ font-size: 0.75em;
+ color: #bdc3c7;
+}
+  
+  
+
+/***********************************
+PAGE: ABOUT
+***********************************/
+
+.profile-photo {
+ display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 15%;
+}
+
+
+
+/***********************************
+PAGE: CONTACT
+***********************************/
+
+.contact-info{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a{
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a{  /*The class contact-info list item phone anchor element*/
+  background-image: url('../img/phone.png'); /*The two dots allow us to step out of the css directory and up one level then dive into img*/
+}
+
+.contact-info li.mail a{
+  background-image: url('../img/mail.png');
+}
+.contact-info li.twitter a{
+  background-image: url('../img/twitter.png');
+}
+
+      
+
+
+/***********************************
+Colours
+***********************************/
+
+/* Site Body */
+body {
+  background-color: #eee;
+  color: #999;
+}
+
+/*Green header*/
+header{
+  background: #35DCEC;
+  border-color: #39B2B4;
+}
+
+/*Navigation Background on mobile          FIX THE NAVE BAR*******************/
+nav{
+  background-color: #39B2B4;
+  
+}
+
+/*Logo text*/
+h1, h2{
+  color: #fff;
+}
+
+/*Coloured links*/
+a {
+  color: #0F00FF;
+}
+
+
+/*Nav link*/
+nav a, nav a:visited{
+  color: #fff;
+}
+/*Selected Nav link*/
+nav a.selected, nav a:hover{
+ color: #FF00F3
+}
+
